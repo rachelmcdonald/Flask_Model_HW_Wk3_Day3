@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>A Single Order</title>
+    </head>
+    <body>
+        <h1>A Single Order</h1>
+        {% for order in orders %}
+        <li>
+            <p><a href="/orders/{{orders.index(order)}}">Show order</a></p>
+        </li>
+        {% endfor %}
+    </body>
+</html>
